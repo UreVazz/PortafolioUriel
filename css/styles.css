@@ -1,0 +1,532 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7; 
+    color: #333; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    justify-items: center;
+}
+
+main{
+    width: 100%;
+    justify-content: center;
+}
+
+section .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+header nav{
+    max-width: 1280px;
+    width: 100%;
+}
+
+
+
+/* Encabezado */
+
+header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    width: 100%;
+    max-width: 1280px;
+
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .logo{
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header nav ul li a{
+    padding: 0px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #7c5dfa;
+}
+
+
+/* Hero section en la página principal */
+#hero {
+    padding: 80px 20px;
+    text-align: center;
+
+}
+
+
+#hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#hero button {
+    background-color: #7c5dfa;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #6345d4;
+}
+
+#hero img {
+    border-radius: 50%;
+}
+
+/* Contribuciones section */
+.contribuciones {
+    padding: 60px 20px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.contribuciones h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contribuciones article {
+    margin-bottom: 40px;
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.contribuciones h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contribuciones p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contribuciones ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #666;
+}
+
+/* Últimos proyectos section */
+.ultimos-proyectos {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    z-index: 1;
+}
+
+.ultimos-proyectos h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.ultimos-proyectos .proyecto {
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.ultimos-proyectos .proyecto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.ultimos-proyectos .proyecto h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.ultimos-proyectos .proyecto p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.ultimos-proyectos .proyecto a {
+    color: #7c5dfa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ultimos-proyectos .proyecto a:hover {
+    color: #6345d4;
+}
+
+/* Colaboremos section */
+.colaboremos {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.colaboremos h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.colaboremos p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.colaboremos a {
+    color: #7c5dfa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.colaboremos a:hover {
+    color: #6345d4;
+}
+
+.colaboremos .contador {
+    font-size: 0.8em;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Acerca de mí page styles */
+.acerca-de-mi-hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.acerca-de-mi-hero div:first-child {
+    margin-bottom: 40px;
+}
+
+.acerca-de-mi-hero h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.acerca-de-mi-hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.acerca-de-mi-hero img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.sobre-mi {
+    padding: 60px 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-mi h3 {
+    font-size: 1.8em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.sobre-mi p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.carrera, .cursos-certificaciones, .educacion {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.carrera h2, .cursos-certificaciones h2, #educacion h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carrera article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.carrera h3 {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.carrera ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #666;
+}
+
+.cursos-certificaciones ul, .educacion ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #666;
+}
+
+/* Proyectos page styles */
+.proyectos-hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.proyectos-hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.proyectos-hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lista-proyectos {
+    padding: 60px 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Contacto page styles */
+.contacto-hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contacto-hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contacto-hero p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Estilos específicos para la sección del blog */
+.contribuciones {
+    padding: 60px 20px;
+    background-color: #fff; /* Fondo blanco como en otras secciones */
+}
+
+.contribuciones h2 {
+    font-size: 2em; /* Tamaño del título similar a otras secciones */
+    color: #333; /* Color del título principal */
+    margin-bottom: 30px;
+    text-align: center; /* Centrar el título de la sección */
+}
+
+.lista-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño de cuadrícula adaptable */
+    gap: 30px; /* Espacio entre los artículos */
+}
+
+.proyecto {
+    background-color: #fff; /* Fondo blanco para cada artículo */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sutil sombra */
+    text-align: left;
+    display: flex; /* Para alinear imagen y contenido (ajustar según diseño) */
+    flex-direction: column; /* Apilar imagen y texto por defecto */
+    align-items: flex-start; /* Alinear elementos al inicio */
+}
+
+.proyecto img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    object-fit: cover; /* Cubrir el contenedor sin deformar */
+}
+
+.proyecto h3 {
+    font-size: 1.2em; /* Tamaño del título del artículo */
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Legibilidad del texto */
+}
+
+.proyecto a {
+    color: #7c5dfa; /* Color del enlace "Leer más" */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.proyecto a:hover {
+    color: #6345d4; /* Cambio de color al pasar el ratón */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer div {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #7c5dfa;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Formulario */
+
+input[type="submit"]{
+    background-color: #7c5dfa;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.colaboremos form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+
+
+.colaboremos label {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.colaboremos input[type="text"],
+.colaboremos textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.colaboremos textarea {
+    grid-column: 1 / -1;
+}
+
+
+
+.colaboremos button[type="submit"]:hover {
+    background-color: #6345d4;
+}

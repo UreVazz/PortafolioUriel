@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Uriel Vazquez</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="Logo Uriel Vazquez" width="100">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="acercade.html">Acerca de mí</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="proyectos-hero">
+            <h2>Proyectos recientes</h2>
+            <img src="../img/imagen.png" alt="Proyectos" width="200">
+        </section>
+
+        <section class="lista-proyectos">
+            <article class="proyecto">
+                <img src="../img/imagen.png" alt="Dashboard Habicredit" width="100">
+                <div>
+                    <h3>Dashboard Habicredit</h3>
+                    <p>¿Cómo podríamos crear un dashboard para broker y coordinadores de tal forma que muestre información relevante sobre los negocios crediticios en proceso?</p>
+                    <a href="#">Ver proyecto</a>
+                </div>
+            </article>
+            <article class="proyecto">
+                <img src="../img/imagen.png" alt="Priorización de clientes" width="100">
+                <div>
+                    <h3>Priorización de clientes</h3>
+                    <p>¿Cómo podríamos crear un priorizador de tareas para analistas financieros de tal forma que puedan gestionar los negocios que necesitan perfilar con un orden y prioridad de gestión?</p>
+                    <a href="#">Ver proyecto</a>
+                </div>
+            </article>
+            
+            </section>
+
+        <section class="colaboremos">
+            <h2>Colaboremos</h2>
+            <p>Escríbeme a <a href="mailto:urielvazquez.dg@gmail.com">urielvazquez.dg@gmail.com</a> y colaboremos.</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre (*)</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido (*)</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="5" maxlength="1000"></textarea>
+                    <p class="contador">0/1000</p>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">LinkedIn</a>
+            <a href="#">Behance</a>
+        </div>
+        <p>© 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
