@@ -1,61 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - Uriel Vazquez</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos - Uriel Vazquez</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../img/logo.png" alt="Logo Uriel Vazquez" width="100">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="acercade.html">Acerca de mí</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container" style="max-width: 1200px;">
+       <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.png" alt="Logo Uriel Vazquez" width="60" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <main>
-    <section class="contribuciones">
-        <h2>Últimas Contribuciones</h2>
-        <div class="lista-proyectos">
-          <article class="proyecto">
-            <img src="../img/imagen.png" alt="Imagen del Artículo 1">
-            <h3>Artículo 1: Título llamativo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis ipsa dolores doloribus inventore aut, vel voluptas iusto.</p>
-            <a href="#">Leer más</a>
-          </article>
-      
-          <article class="proyecto">
-            <img src="../img/imagen.png" alt="Imagen del Artículo 2">
-            <h3>Artículo 2: Otro título interesante</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis ipsa dolores doloribus inventore aut, vel voluptas iusto.</p>
-            <a href="#">Leer más</a>
-          </article>
-      
-          <article class="proyecto">
-            <img src="../img/imagen.png" alt="Imagen del Artículo 3">
-            <h3>Artículo 3: Un título que incite a la lectura</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis ipsa dolores doloribus inventore aut, vel voluptas iusto.</p>
-            <a href="#">Leer más</a>
-          </article>
-        </div>
-      </section>
-    </main>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/acercade.html">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <footer>
-        <div>
-            <a href="#">LinkedIn</a>
-            <a href="#">Behance</a>
-        </div>
-        <p>© 2024 All rights reserved.</p>
-    </footer>
-    
+  <main>
+    <section class="blog">
+      <h2>Últimas publicaciones</h2>
+      <div class="lista-articulos">
+        <article class="articulo">
+          <img src="../img/imagen.png" alt="Imagen del Artículo 1">
+          <h3>Diseñar para impactar: cómo medir el valor del diseño</h3>
+          <p>Exploro cómo los diseñadores pueden alinear su trabajo con los objetivos del negocio y demostrar impacto real con métricas claras.</p>
+          <a href="#">Leer artículo</a>
+        </article>
+
+        <article class="articulo">
+          <img src="../img/imagen.png" alt="Imagen del Artículo 2">
+          <h3>¿Qué hace realmente un Product Designer?</h3>
+          <p>Una reflexión sobre los límites, habilidades y responsabilidades que definen este rol dentro de equipos de producto digitales.</p>
+          <a href="#">Leer artículo</a>
+        </article>
+
+        <article class="articulo">
+          <img src="../img/imagen.png" alt="Imagen del Artículo 3">
+          <h3>Soft skills que transforman equipos</h3>
+          <p>Desde la empatía hasta la escucha activa: claves humanas que potencian cualquier colaboración y liderazgo de diseño.</p>
+          <a href="#">Leer artículo</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light py-3 mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <nav aria-label="Redes sociales">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" target="_blank" rel="noopener noreferrer" class="nav-link text-light">LinkedIn</a></li>
+          <li class="nav-item"><a href="#" target="_blank" rel="noopener noreferrer" class="nav-link text-light">Behance</a></li>
+        </ul>
+      </nav>
+      <p class="mb-0">© 2024 Uriel Vazquez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN (opcional, para funcionalidades) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
