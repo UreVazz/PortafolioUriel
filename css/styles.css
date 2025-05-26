@@ -499,13 +499,14 @@ header nav ul li a:hover {
 .containerproyecto{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 3rem 3rem;
 }
 
 
 .proyecto {
     background-color: #fff; /* Fondo blanco para cada artículo */
-    padding: 20px;
+    padding: 3rem;
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sutil sombra */
     text-align: left;
@@ -579,10 +580,17 @@ footer p {
     font-size: 0.9em;
 }
 
+
 /* Formulario */
 
+.inputt{
+  display: flex;
+  flex-direction: column;
+}
+
+
 input[type="submit"]{
-    background-color: #7c5dfa;
+    background-color: #1f1f1f;
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -592,13 +600,12 @@ input[type="submit"]{
 }
 
 .colaboremos form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
     margin: 20px auto 0;
     padding: 20px;
-    background-color: #f7f7f7;
     border-radius: 5px;
 }
 
@@ -619,12 +626,3 @@ input[type="submit"]{
     font-size: 1em;
 }
 
-.colaboremos textarea {
-    grid-column: 1 / -1;
-}
-
-
-
-.colaboremos button[type="submit"]:hover {
-    background-color: #6345d4;
-}
