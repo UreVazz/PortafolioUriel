@@ -7,12 +7,6 @@
     text-decoration: none;
 }
 
-/* .bg-dark{
-  background-color: #fff!important;
-  color: #1f1f1f!important;
-}} */
-
-
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -62,6 +56,10 @@ header nav{
     max-width: 1280px;
     width: 100%;
     background: #fff;
+}
+
+.nav-link {
+  color: #1f1f1f!important;
 }
 
 .bg-body-tertiary {
@@ -341,6 +339,7 @@ display: flex;
   width: 100%;
   text-align: left;
 }
+
 #heroacerca .meimg{
     width: 400px;
     height: 450px;
@@ -651,15 +650,9 @@ footer p {
 .inputt{
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
 }
 
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-left: 56px;
-    padding-right: 56px;
-    padding-top: 80px;
-    padding-bottom: 80px;
 
 .containercolabora{
     padding-left: 56px!important;
@@ -673,7 +666,6 @@ footer p {
     color: #1f1f1f;
     margin-bottom: 10px;
 }
-}
 
 .lista-proyectos h2 {
     font-size: 2em;
@@ -682,8 +674,6 @@ footer p {
     text-align: left!important;
     padding-left: 56px;
 }
-
-
 
 input[type="submit"]{
     background-color: #1f1f1f;
@@ -695,10 +685,26 @@ input[type="submit"]{
     transition: background-color 0.3s ease;
 }
 
+input, textarea{
+  border-radius: 6px;
+  border: 1px solid #8d8d8d;
+  padding: 8px;
+}
+
 .formm {
 width: 100%;
 }
 
+input::placeholder {
+  color:#717171;
+  font-size: 14px;
+  padding-left: 6px;
+}
+textarea, .contador {
+  color:#717171;
+  font-size: 14px;
+  padding-left: 6px;
+}
 
 .colaboremos label {
     font-size: 0.7em;
