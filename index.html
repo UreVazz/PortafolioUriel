@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -39,102 +40,109 @@
 </header>
 
     <main>
-        <section id="herohome">
-            <div class="containerhero">
-              <div class="caption"><img src="img/icon1.png"><h6>Product Designer</h6></div>
-                <h1>Creando experiencias digitales centradas en el usuario</h1>
-                <p>A través de un proceso que comienza con la comprensión de las necesidades y deseos de los usuarios. Este proceso incluye investigación de usuarios, diseño UX (Experiencia de Usuario) y UI (Interfaz de Usuario), creación de prototipos interactivos y pruebas para validar y refinar las soluciones. </p>
-                <button type="button" class="btn btn-outline-primary">Ver más</button>
-            </div>
-                <img class="meimg" src="img/uriel-herohome.png" alt="Uriel Vazquez" width="100">
+        <section>
+              <div class="herohome">
+                <div class="containerhero">
+                  <div class="caption"><img src="img/icon1.png"><h6>Product Designer</h6></div>
+                    <h1>Creando experiencias digitales centradas en el usuario</h1>
+                    <p>A través de un proceso que comienza con la comprensión de las necesidades y deseos de los usuarios. Este proceso incluye investigación de usuarios, diseño UX (Experiencia de Usuario) y UI (Interfaz de Usuario), creación de prototipos interactivos y pruebas para validar y refinar las soluciones. </p>
+                    <button type="button" class="btn btn-outline-primary">Ver más</button>
+                </div>
+                    <div class="containerimgs">
+                      <img class="meimg" src="img/uriel-herohome.png" alt="Uriel Vazquez" >
+                    </div>
+                    <img class="orbitarimg" src="img/orbitar.animacion.png" alt="Uriel Vazquez" >
+              </div>
         </section>
 
-       <section class="contribuciones">
-          <h2>Mis fortalezas</h2>
-            <div class="container">
-              <div class="forta1">
-                 <article>
-                  <img src="img/icon3.png">
-                    <h3>Investigación de Usuarios</h3>
-                    <p>Entrevistas, encuestas, pruebas de usabilidad, análisis de datos para comprender las necesidades del usuario.</p>
-                </article>
-                 <article>
-                  <img src="img/icon4.png">
-                    <h3>Estrategia de Producto</h3>
-                    <p>Alineación del diseño con los objetivos del negocio y la visión del producto.</p>
-                </article>
-            </div>
-             <div class="forta1">
-                 <article>
-                  <img src="img/icon5.png">
-                    <h3>Liderazgo de Diseño</h3>
-                    <p>Mentoring de diseñadores, facilitación de talleres y comunicación efectiva con stakeholders.</p>
-                </article>
-                  <article>
-                    <img src="img/icon6.png">
-                    <h3>Sistema de diseño</h3>
-                    <p>Creación y mantenimiento de sistemas de diseño escalables y consistentes.</p>
-                </article>
+       <section id="contrisec">
+          <div class="contribuciones">
+            <h2>Mis fortalezas</h2>
+              <div class="container">
+                <div class="forta1" data-aos="fade-up">
+                   <article>
+                    <img src="img/icon3.png">
+                      <h3>Investigación de Usuarios</h3>
+                      <p>Entrevistas, encuestas, pruebas de usabilidad, análisis de datos para comprender las necesidades del usuario.</p>
+                  </article>
+                   <article>
+                    <img src="img/icon4.png">
+                      <h3>Estrategia de Producto</h3>
+                      <p>Alineación del diseño con los objetivos del negocio y la visión del producto.</p>
+                  </article>
+              </div>
+               <div class="forta1" data-aos="fade-up">
+                   <article>
+                    <img src="img/icon5.png">
+                      <h3>Liderazgo de Diseño</h3>
+                      <p>Mentoring de diseñadores, facilitación de talleres y comunicación efectiva con stakeholders.</p>
+                  </article>
+                    <article>
+                      <img src="img/icon6.png">
+                      <h3>Sistema de diseño</h3>
+                      <p>Creación y mantenimiento de sistemas de diseño escalables y consistentes.</p>
+                  </article>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="lista-proyectos">
-          <h2>Proyectos</h2>
-            <article class="proyecto">
-                <img clas="refe" src="img/habicreditproyecto.png" alt="Producto Habicredit">
-                <div class="containerproyecto">
-                <div class="caption"><img class="iconocaso" src="img/icon2.png"><h6>Caso de estudio</h6></div>
-                    <h3>HabiCredit una plataforma integral</h3>
-                    Habicredit nació como una iniciativa estratégica dentro de Habi para crear una solución de financiamiento inmobiliario que complementara el portafolio de servicios de la compañía. </br>Mientras Habi permitía a los usuarios comprar y vender inmuebles, Habicredit se enfocó en ofrecer la posibilidad de financiar esas adquisiciones desde la misma empresa, integrando procesos, usuarios y necesidades en una sola experiencia.</p>
-                    <button type="button" class="btn btn-outline-primary">Ver más</button>
-                </div>
-            </article>
-
-            <article class="proyecto">
-                <div class="containerproyecto">
-                <div class="caption"><img class="iconocaso" src="img/icon2.png"><h6>Caso de estudio</h6></div>
-                    <h3>Buscando propiedades</h3>
-                    Comprar una casa es una de las decisiones más importantes en la vida de muchas personas, pero en propiedades.com, la experiencia digital no reflejaba esa importancia. 
-                    A pesar de ser una plataforma con alto volumen de propiedades listadas, detectamos que muchos usuarios abandonaban la búsqueda sin contactar a los anunciantes.</p>
-                    <button type="button" class="btn btn-outline-primary">Ver más</button>
-                </div>
-                <img clas="refe" src="img/pcomproyecto.png" alt="Producto Habicredit">
-            </article>
+        <section>
+          <div class="lista-proyectos">
+            <h2>Proyectos</h2>
+              <article class="proyecto" data-aos="zoom-in">
+                  <img clas="refe" src="img/habicreditproyecto.png" alt="Producto Habicredit">
+                  <div class="containerproyecto">
+                  <div class="caption"><img class="iconocaso" src="img/icon2.png"><h6>Caso de estudio</h6></div>
+                      <h3>HabiCredit una plataforma integral</h3>
+                      Habicredit nació como una iniciativa estratégica dentro de Habi para crear una solución de financiamiento inmobiliario que complementara el portafolio de servicios de la compañía. </br>Mientras Habi permitía a los usuarios comprar y vender inmuebles, Habicredit se enfocó en ofrecer la posibilidad de financiar esas adquisiciones desde la misma empresa, integrando procesos, usuarios y necesidades en una sola experiencia.</p>
+                      <button type="button" class="btn btn-outline-primary">Ver más</button>
+                  </div>
+              </article>
+              <article class="proyecto" data-aos="zoom-in">
+                  <div class="containerproyecto">
+                  <div class="caption"><img class="iconocaso" src="img/icon2.png"><h6>Caso de estudio</h6></div>
+                      <h3>Buscando propiedades</h3>
+                      Comprar una casa es una de las decisiones más importantes en la vida de muchas personas, pero en propiedades.com, la experiencia digital no reflejaba esa importancia.
+                      A pesar de ser una plataforma con alto volumen de propiedades listadas, detectamos que muchos usuarios abandonaban la búsqueda sin contactar a los anunciantes.</p>
+                      <button type="button" class="btn btn-outline-primary">Ver más</button>
+                  </div>
+                  <img clas="refe" src="img/pcomproyecto.png" alt="Producto Habicredit">
+              </article>
+          </div>
             </section>    
 
 
 
-<section class="colaboracion">
-                 <article class="proyectoform">
-                <div class="containerproyectoform">
-                    <h3>¿Hablamos?</h3>
-                    Siempre estoy abierto a nuevas conversaciones, proyectos con propósito o simplemente compartir ideas sobre diseño de producto.</p>
-                    <a style="color:#1f1f1f" href="mailto:urielvazquez.dg@gmail.com" target="_blank">urielvazquez.dg@gmail.com</a>
-                </div>
-                
-                <div class="formm">
-                  <form action="#" method="POST">
-                      <div class="inputt">
-
-                          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                      </div>
-                      <div class="inputt">
-
-                          <input type="text"  placeholder="Apellido" id="apellido" name="apellido" required>
-                      </div>
-                      <div class="inputt">
-
-                          <textarea placeholder="Escribe un comentario" id="comentario" name="comentario" rows="5" maxlength="1000"></textarea>
-                          <p class="contador">0/1000</p>
-                      </div>
-                      <div>
-                      <input type="submit" value="Enviar">
-                      </div>
-                  </form>
-                </div>
-                
-            </article>
+<section id="colabosec" >
+                 <div class="colaboracion">
+                   <article class="proyectoform" data-aos="fade-up">
+                                   <div class="containerproyectoform">
+                      <h3>¿Hablamos?</h3>
+                      Siempre estoy abierto a nuevas conversaciones, proyectos con propósito o simplemente compartir ideas sobre diseño de producto.</p>
+                      <a style="color:#1f1f1f" href="mailto:urielvazquez.dg@gmail.com" target="_blank">urielvazquez.dg@gmail.com</a>
+                                   </div>
+                                   
+                                   <div class="formm">
+                    <form action="#" method="POST">
+                        <div class="inputt">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="inputt">
+                            <input type="text"  placeholder="Apellido" id="apellido" name="apellido" required>
+                        </div>
+                        <div class="inputt">
+                            <textarea placeholder="Escribe un comentario" id="comentario" name="comentario" rows="5" maxlength="1000"></textarea>
+                            <p class="contador">0/1000</p>
+                        </div>
+                        <div>
+                        <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                                   </div>
+                                   
+                               </article>
+                 </div>
 
         </section>
 
@@ -152,6 +160,10 @@
 
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>
