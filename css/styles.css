@@ -26,6 +26,9 @@ body {
    box-sizing: border-box;
 }
 
+.navbar{
+  padding: 0px 32px;
+}
 
 .navbar, .bg-body-tertiary {
    background-color: none!important;
@@ -47,10 +50,21 @@ section, footer{
 
 header{
  grid-area: header;
- background-color: #fff; /* Asegura un fondo blanco en el header */
  width: 100%;
  height: auto;
 }
+
+header{
+   display: flex;
+   justify-content: center;
+   background-color: #f7f7f7;
+   position: sticky;
+   top: 0px;
+   z-index: 100;
+   width: 100%;
+}
+
+
 main{
  grid-area: main;
  width: 100%;
@@ -77,7 +91,6 @@ li{
 header nav{
    max-width: 1280px;
    width: 100%;
-   background: #fff;
 }
 
 
@@ -88,23 +101,14 @@ header nav{
 
 .bg-body-tertiary {
    --bs-bg-opacity: 1;
-   background-color: #fff !important;
+   background-color:#f7f7f7;
 }
 
 
 
 
 /* Encabezado */
-header{
-   display: flex;
-   justify-content: center;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   position: sticky;
-   top: 0px;
-   z-index: 100;
-   width: 100%;
-   background-color: #fff;
-}
+
 
 
 .topbar {
@@ -181,6 +185,12 @@ header nav ul li a:hover {
 }
 
 
+.refe img, .refe2 img{
+width: 85%;
+height: auto;
+display: block;
+object-fit: contain;
+}
 
 
 .herohome {
@@ -524,18 +534,15 @@ header nav ul li a:hover {
 
 
 
-
 .colaboracion{
  display: flex;
  flex-direction: column;
  gap: 32px;
- padding-bottom: 120px; /* Original */
- padding-top: 80px; /* Original */
+ padding-bottom: 140px; 
+ padding-top: 140px; 
  height: auto;
  max-width: 1200px;
 }
-
-
 
 
 .colaboracion article {
@@ -631,6 +638,15 @@ display: flex;
  padding: 3rem 3rem; /* Original */
  width: 100%;
 }
+.containerproyecto2{
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ width: 100%;
+ padding: 3rem 0rem 3rem 3rem;
+  justify-content: center;
+}
+
 
 
 
@@ -649,12 +665,12 @@ display: flex;
 }
 
 
-.proyecto .refe {
+.proyecto .refe, .refe2 {
    width: 100%;
    height: auto;
-   border-radius: 5px;
-   margin-bottom: 15px;
    object-fit: cover;
+   display: flex;
+   justify-content: center;
 }
 
 
@@ -865,14 +881,14 @@ textarea, .contador {
 .orbitarimg {
 width: 120px;
 height: 120px;
-margin-top: -450px;
+margin-top: -150px;
 margin-left: 190px;
 z-index: 3;
 animation: orbitar 8s linear infinite;
 transform-origin: center center;
 }
 .meimg {
-width: 70%;
+width: 90%;
 height: auto;
 display: block;
 animation: flotar 4s ease-in-out infinite;
@@ -913,14 +929,12 @@ width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 32px;
-    gap: 32px;
+    gap: 24px;
     border: 1px solid #ededed;
 }
-.refe{
-  width: 100%;
-}
+
 .refe img, .refe2 img{
-  width: 100%;
+  width: 90%;
   height: auto;
   display: block;
 }
@@ -959,7 +973,7 @@ width: 100%;
 }
 
 section .container {
-   max-width: 1280px;
+   max-width: none;
    margin: 0 auto;
    padding: 0;
 }
@@ -991,6 +1005,11 @@ section .container {
 .lista-proyectos h2 {
     padding-left: 0px;
 }
+
+.containerimgs {
+    display: flex;            
+    justify-content: center; 
+    align-items: center; }
 
 
 /* --- Media Queries PROYECTOS MOBILE--- //////////////////////////////////////*/
@@ -1050,6 +1069,10 @@ section .container {
 }
 .navbar>.container-fluid {
 padding: 0px 24px;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    border: none;
 }
 
 
