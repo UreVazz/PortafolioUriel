@@ -23,17 +23,12 @@ body {
    justify-items: center;
    grid-template-columns: 100%;
    grid-template-rows: auto 1fr auto;
-   box-sizing: border-box;
 }
 
 .navbar{
   padding: 0px 32px;
 }
 
-.navbar, .bg-body-tertiary {
-   background-color: none!important;
-   width: 100%;
-}
 
 
 section, footer{
@@ -79,7 +74,7 @@ footer{
 section .container {
    max-width: 1280px;
    margin: 0 auto;
-   padding: 0 auto;
+   padding: 0;
 }
 
 
@@ -100,7 +95,6 @@ header nav{
 
 
 .bg-body-tertiary {
-   --bs-bg-opacity: 1;
    background-color:#f7f7f7;
 }
 
@@ -221,6 +215,8 @@ object-fit: contain;
  width: 100%;
  text-align: right;
  box-sizing: border-box;
+ display: flex;
+ justify-content: center;
 }
 
 
@@ -274,13 +270,6 @@ object-fit: contain;
 }
 
 
-.contribuciones h3 {
-   font-size: 1.5em;
-   color: #1f1f1f;
-   margin-bottom: 16px;
-   margin-top: 16px;
-}
-
 
 .contribuciones p {
    color: #666;
@@ -308,56 +297,6 @@ object-fit: contain;
 
 
 
-.ultimos-proyectos h2 { /* Asumiendo .lista-proyectos h2 */
-   font-size: 2em;
-   color: #333;
-   margin-bottom: 30px;
-}
-
-
-.ultimos-proyectos .proyecto { /* Asumiendo .lista-proyectos .proyecto */
-   background-color: #fff;
-   padding: 40px 40px;
-   border-radius: 5px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-   margin-bottom: 20px;
-   text-align: left;
-}
-
-
-.ultimos-proyectos .proyecto img { /* Asumiendo .lista-proyectos .proyecto img */
-   width: 80px;
-   height: 80px;
-   object-fit: cover;
-   border-radius: 5px;
-   margin-right: 20px;
-}
-
-
-.ultimos-proyectos .proyecto h3 { /* Asumiendo .lista-proyectos .proyecto h3 */
-   font-size: 1.2em;
-   color: #555;
-   margin-bottom: 5px;
-}
-
-
-.ultimos-proyectos .proyecto p { /* Asumiendo .lista-proyectos .proyecto p */
-   color: #666;
-   font-size: 0.9em;
-   margin-bottom: 10px;
-}
-
-
-.ultimos-proyectos .proyecto a { /* Asumiendo .lista-proyectos .proyecto a */
-   color: #7c5dfa;
-   text-decoration: none;
-   font-weight: bold;
-}
-
-
-.ultimos-proyectos .proyecto a:hover { /* Asumiendo .lista-proyectos .proyecto a:hover */
-   color: #6345d4;
-}
 
 
 
@@ -375,15 +314,6 @@ object-fit: contain;
  text-align: left;
 }
 
-
-#heroacerca .meimg{
-   width: 400px;
-   height: 450px;
-}
-#herohome .meimg{
-   width: 400px;
-   height: 450px;
-}
 
 
 .heroacerca{
@@ -739,15 +669,6 @@ footer p {
 
 
 
-
-.containercolabora{
-   padding-left: 56px!important;
-   padding-right: 56px;
-   padding-top: 80px;
-   padding-bottom: 80px;
-}
-
-
 .contribuciones h3{
    font-size: 1.2em;
    color: #1f1f1f;
@@ -792,28 +713,12 @@ input::placeholder {
  font-size: 14px;
  padding-left: 6px;
 }
-textarea, .contador {
+.formm .contador {
  color:#717171;
  font-size: 14px;
  padding-left: 6px;
 }
 
-
-.colaboremos label {
-   font-size: 0.7em;
-   color: #555;
-   margin-bottom: 12px;
-}
-
-
-.colaboremos input[type="text"],
-.colaboremos textarea {
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 3px;
-   font-family: inherit;
-   font-size: 1em;
-}
 
 
 
@@ -843,14 +748,13 @@ textarea, .contador {
 
 
 
-
 .orbitarimg {
    width: 100px; 
    height: 100px; 
    display: block;
    position: absolute;
-   margin-left: 80px; 
-   margin-top: 320px; 
+   margin-left: 300px; 
+   margin-top: 280px; 
    z-index: 3;
    animation: orbitar 8s linear infinite;
    transform-origin: center center;
@@ -988,20 +892,7 @@ section .container {
 .btn-outline-primary, input[type="submit"]{
   width: 100%;
 }
-.colaboracion {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 80px 24px;
-    height: auto;
-    max-width: 1200px;
-}
-.colaboracion h3 {
-    padding-left: 0px;
-}
-.colaboracion article {
-    padding: 40px 24px;
-}
+
 .lista-proyectos h2 {
     padding-left: 0px;
 }
