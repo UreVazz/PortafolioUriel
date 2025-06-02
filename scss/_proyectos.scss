@@ -1,0 +1,24 @@
+@use "components";
+@use "variables";
+@use "form";
+@use "layout";
+
+.heroproyectos{
+    @include section-row;
+    @media (max-width: 480px) {
+        padding: $padding32 $padding16;
+        flex-direction: column;
+        gap: $gap24
+    }
+}
+
+.listaproyectos {
+    @include section-column;
+    text-align: left;
+    gap: $gap24;
+    width: 100%;
+    .proyectos{
+        @include section-row;
+        box-shadow: $box-shadow;
+    }
+}

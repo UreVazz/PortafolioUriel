@@ -1,0 +1,41 @@
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: $main-font;
+    line-height: $line-height;
+    background-color: $color-tertiary;
+    font-size: $font-size-base;
+}
+
+li {
+  list-style-type: none;
+}
+
+ h3 {
+    font-size: $font-size-m;
+    color: $color-primary;
+    margin-bottom: $margin8 ;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $font-size-l;
+    color: $color-primary;
+    margin-bottom: $margin8 ;
+    text-align: left;
+  }
+
+  #contrisec, #colabosec, #headersec {
+  background-color: $color-blanco;
+}

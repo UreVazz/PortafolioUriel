@@ -1,0 +1,37 @@
+@use "components";
+
+.inputt {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $padding16;
+}
+
+input[type="submit"] {
+  @extend .btn-outline-primary;
+  @media (max-width: 480px) {
+    width: 100%; 
+  }
+}
+
+input, textarea {
+  border-radius: $border-radius6;
+  border: 1px solid $color-secondary;
+  padding: $padding8;
+}
+
+.formm {
+  width: 100%;
+}
+  .contador {
+    color: $color-tertiary;
+    font-size: 14px;
+    padding-left: $padding8;
+    padding-top: $padding8;
+  }
+
+
+input::placeholder {
+  color: $color-tertiary;
+  font-size: 14px;
+  padding-left: $padding8;
+}

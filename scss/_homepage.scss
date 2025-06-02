@@ -1,0 +1,116 @@
+@use "components";
+@use "variables";
+@use "form";
+@use "layout";
+
+section{
+    @include main-section-fullwidth;
+    font-family: $main-font;
+}
+
+.hero-section {
+  @include section-row;
+
+  @media (max-width: 480px) {
+    padding: $padding32 $padding16;
+    flex-direction: column;
+    gap: $gap24
+  }
+}
+
+.main-content-wrapper {
+@include section-column;
+  text-align: left;
+  gap: $gap24;
+  width: 100%;
+}
+
+.containerimgs {
+  @include section-row;
+    img {
+    width: 70%;
+        }
+
+  @media (max-width: 480px) {
+   width: 90%;
+  }
+
+}
+
+// Mis fortalezas section
+
+.contribuciones {
+  @include section-column;
+  .container { 
+    @include section-column;
+    gap: $gap32;
+    padding: 0px 0px;
+    @media (max-width: 480px) {
+      gap: $gap24;
+    }
+  }
+}
+
+  .forta1 {
+  @extend .forta1;
+
+        .itemfortalezas { 
+        @extend .itemfortalezas;
+    }
+  }
+
+
+ // Proyectos section   __________________
+
+.lista-proyectos {
+  @include section-column;
+  gap: $gap32;
+}
+
+.proyecto{
+    @include section-row;
+  .refe{
+    @include section-row;
+    object-fit: cover;
+    width: 100%;
+  }
+  .containerproyecto{
+    @extend .containerproyecto;
+  }
+}
+
+// Form section /////////////////////////////
+
+.colaboracion {
+  @include section-row;
+  gap: $gap32;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: $padding24 $padding16;
+  }
+
+  .formm {
+    @extend .formm;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .inputt {
+    @extend .inputt;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    @extend input[type="submit"];
+    width: auto;
+    margin-top: $margin16;
+  }
+}
+
+// Footer section //////////////////////////
+
+footer{
+  @extend footer;
+}

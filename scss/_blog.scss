@@ -1,0 +1,9 @@
+@use "components";
+@use "variables";
+@use "form";
+@use "layout";
+@use "acercade";
+
+.heroblog{
+    @extend .heroacerca;
+}

@@ -1,0 +1,71 @@
+@use "variables";
+
+body {
+  background-color: $color-gris-claro;
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  justify-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+grid-area: header;
+height: 100%;
+background-color: $color-tertiary;
+display: flex;
+flex-direction: row;
+position: sticky;
+top: 0px;
+z-index: 10;
+width: 100%;
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: $color-primary;
+  color:#fff;
+  padding: $padding16;
+  display: flex;
+  justify-content: center;
+
+  .containerfooter {
+    max-width: $max-desktop;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: $padding24;
+    gap: $gap16;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  p {
+    color: #fff;
+    font-size: $font-size-base;
+  }
+
+  @media (max-width: 480px) {
+        flex-direction: column;
+        padding: 24px 16px;
+        max-width: none;
+        width: 100%;
+        gap: $gap16;
+    }
+}
