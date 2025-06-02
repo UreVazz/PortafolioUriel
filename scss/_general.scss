@@ -1,5 +1,4 @@
-
-
+@use "variables"; 
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,34 +7,32 @@
   text-decoration: none;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body{
-    font-family: $main-font;
-    line-height: $line-height;
-    background-color: $color-tertiary;
-    font-size: $font-size-base;
+    font-family: variables.$main-font; 
+    line-height: variables.$line-height; 
+    background-color: variables.$color-tertiary; 
+    font-size: variables.$font-size-base; 
 }
 
 li {
   list-style-type: none;
 }
+ 
+#contrisec, #colabosec, #headersec {
+  background-color: variables.$color-blanco; 
+}
+#heros{
+  padding: 40px 0px 120px 0px;
 
- h3 {
-    font-size: $font-size-m;
-    color: $color-primary;
-    margin-bottom: $margin8 ;
-    text-align: center;
+  @media (max-width: 480px) {
+    padding: 0px 0px 64px 0px ; 
   }
+}
 
-  h2 {
-    font-size: $font-size-l;
-    color: $color-primary;
-    margin-bottom: $margin8 ;
-    text-align: left;
+#colabosec{
+  @media (max-width: 480px) {
+    padding: 56px 16px;
   }
-
-  #contrisec, #colabosec, #headersec {
-  background-color: $color-blanco;
 }

@@ -1,37 +1,39 @@
-@use "components";
+@use "components"; 
+@use "variables"; 
 
 .inputt {
   display: flex;
   flex-direction: column;
-  padding-bottom: $padding16;
+  padding-bottom: variables.$padding16; 
 }
 
 input[type="submit"] {
-  @extend .btn-outline-primary;
+  @extend .btn-outline-primary; // ¡AJUSTE!
+  background-color: variables.$color-blanco; 
   @media (max-width: 480px) {
     width: 100%; 
   }
 }
 
 input, textarea {
-  border-radius: $border-radius6;
-  border: 1px solid $color-secondary;
-  padding: $padding8;
+  border-radius: variables.$border-radius6; 
+  border: 1px solid variables.$color-secondary; 
+  padding: variables.$padding8; 
+  font-size: 14px;
 }
 
 .formm {
   width: 100%;
 }
   .contador {
-    color: $color-tertiary;
+    color: variables.$color-secondary; 
     font-size: 14px;
-    padding-left: $padding8;
-    padding-top: $padding8;
+    padding-left: variables.$padding8; 
+    padding-top: variables.$padding8; 
   }
 
-
-input::placeholder {
-  color: $color-tertiary;
+input::placeholder, input textarea::placeholder {
+  color: variables.$color-secondary; 
   font-size: 14px;
-  padding-left: $padding8;
+  padding-left: variables.$padding8; 
 }

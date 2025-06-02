@@ -1,116 +1,173 @@
-@use "components";
-@use "variables";
-@use "form";
-@use "layout";
+@use "components"; 
+@use "variables"; 
+@use "mixins"; 
+@use "animationss";
 
 section{
-    @include main-section-fullwidth;
-    font-family: $main-font;
+    @include mixins.main-section-fullwidth; 
+    font-family: variables.$main-font; 
 }
 
 .hero-section {
-  @include section-row;
+  @include mixins.section-row; 
+  padding: 0px;
 
   @media (max-width: 480px) {
-    padding: $padding32 $padding16;
+    padding: variables.$padding32 variables.$padding16; 
     flex-direction: column;
-    gap: $gap24
+    gap: variables.$gap24; 
   }
 }
 
 .main-content-wrapper {
-@include section-column;
+@include mixins.section-column; 
   text-align: left;
-  gap: $gap24;
+  padding: 40px 32px;
+  gap: variables.$gap24; 
   width: 100%;
 }
 
-.containerimgs {
-  @include section-row;
-    img {
-    width: 70%;
-        }
 
-  @media (max-width: 480px) {
-   width: 90%;
-  }
 
-}
 
 // Mis fortalezas section
 
+
 .contribuciones {
-  @include section-column;
-  .container { 
-    @include section-column;
-    gap: $gap32;
-    padding: 0px 0px;
+  h2{
+    padding-left: 24px;
+  }
+  @include mixins.section-column; 
+  padding: 48px 0px!important;
+
+  @media (max-width: 480px) {
+    padding: 48px 16px!important; 
+  }
+  .containerf{
+
+    display: flex;
+    flex-direction: column; 
+    gap: variables.$gap32; 
+
     @media (max-width: 480px) {
-      gap: $gap24;
+    padding: 0px!important;
+    gap: variables.$gap16;
+  }
+  .forta1{
+
+    @media (max-width: 480px) {
+      padding: 0px!important;
     }
   }
 }
+}
 
-  .forta1 {
-  @extend .forta1;
 
-        .itemfortalezas { 
-        @extend .itemfortalezas;
-    }
-  }
 
 
  // Proyectos section   __________________
 
-.lista-proyectos {
-  @include section-column;
-  gap: $gap32;
+
+ .lista-proyectos {
+    h2{
+    padding-left: 24px;
+  }
+  @include mixins.section-column; 
+  text-align: left;
+  gap: variables.$gap40; 
+  width: 100%;
+  padding: 48px 0px;
+  
+  .proyecto {
+  @include mixins.section-row; 
+  box-shadow: variables.$box-shadow; 
+  border: variables.$borderarticle; 
+  background-color: variables.$color-blanco; 
+  border-radius: variables.$border-radius24; 
+  padding: 72px 56px;;
+
+  @media (max-width: 480px) {
+        @include mixins.section-column; 
+        padding: variables.$padding24; 
+        gap: variables.$gap32; 
+      }
+
+    .refe, .refe2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+
+      img {
+      width: 80%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+
+      @media (max-width: 480px) {
+        width: 90%;
+      }
+    }
+  }
+    .containerproyecto, .containerproyecto2{
+    display: flex;
+    flex-direction: column;
+    gap: variables.$gap24; 
+    justify-content: flex-start;
+    width: 100%;
+
+    img{
+      width: 6%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 40px 16px;
+    }
+}
 }
 
-.proyecto{
-    @include section-row;
-  .refe{
-    @include section-row;
-    object-fit: cover;
-    width: 100%;
-  }
-  .containerproyecto{
-    @extend .containerproyecto;
+}
+
+.containerproyecto2{
+  @media (max-width: 480px) {
+    order: 1;
   }
 }
+
+
+
+
 
 // Form section /////////////////////////////
 
 .colaboracion {
-  @include section-row;
-  gap: $gap32;
+  @include mixins.section-row; 
+  gap: variables.$gap32; 
+  box-shadow: variables.$box-shadow;
+  border-radius: variables.$border-radius24; 
+  border: variables.$borderarticle; 
 
   @media (max-width: 480px) {
     flex-direction: column;
-    padding: $padding24 $padding16;
+    padding: variables.$padding24 variables.$padding16; 
   }
-
-  .formm {
-    @extend .formm;
+  .proyectoform{
+    @include mixins.section-row; 
+    gap: variables.$gap40; 
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+    padding: variables.$padding32 variables.$padding16; 
 
-  .inputt {
-    @extend .inputt;
+    .containerproyectoform{
+    display: flex;
+    flex-direction: column;
+    gap: variables.$gap24; 
+    justify-content: flex-start;
     width: 100%;
+    }
   }
 
-  input[type="submit"] {
-    @extend input[type="submit"];
-    width: auto;
-    margin-top: $margin16;
-  }
+  
 }
 
-// Footer section //////////////////////////
 
-footer{
-  @extend footer;
-}

@@ -1,9 +1,50 @@
-@use "components";
+@use "mixins";
 @use "variables";
-@use "form";
-@use "layout";
-@use "acercade";
+@use "acercade"; 
 
 .heroblog{
-    @extend .heroacerca;
+    @extend .heroacerca; 
+    padding: 56px 56px;
+
+    @media (max-width: 480px) {
+        padding: 56px 24px;
+    }
+
+    h2{
+        width: 100%;
+    }
+}
+
+.btn-primary{
+    @extend .btn-outline-primary;
+    background-color: variables.$color-blanco; 
+    width: 35%;
+    color: variables.$color-primary; 
+    @media (max-width: 480px) {
+        width: 100%; 
+    }
+}
+
+
+
+.containerpost{
+    @include mixins.section-column;
+    gap: variables.$gap40;
+    padding: 0px 0px;
+
+    @media (max-width: 480px) {
+        padding: 0px;
+        gap: variables.$gap24; 
+    }
+    
+    .postrow{
+        @include mixins.section-row;
+        gap: variables.$gap32;
+        padding: 0px 0px;
+        
+        @media (max-width: 480px) {
+            flex-direction: column;
+            padding: 0px;
+        }
+    }
 }

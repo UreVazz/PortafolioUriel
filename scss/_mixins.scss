@@ -1,0 +1,86 @@
+@use "variables";
+
+@mixin main-section-fullwidth{
+    padding: 100px 16px;
+    gap: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    @media (max-width: 480px) {
+        padding: 24px 0px;
+        width: 100%;
+    }
+}
+
+
+@mixin section-row{
+    width: 100;
+    padding: 48px 56px;
+    gap: variables.$gap32; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: variables.$max-desktop; 
+    margin: 0 auto;
+    
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        padding: 24px 16px;
+        max-width: none;
+        width: 100%;
+        gap: variables.$gap16; 
+    }
+}
+
+@mixin section-column{
+    padding: 48px 56px;
+    gap: variables.$gap32; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: variables.$max-desktop; 
+    margin: 0 auto;
+
+    @media (max-width: 480px) {
+        padding: 24px 16px;
+        max-width: none;
+        width: 100%;
+        gap: variables.$gap16; 
+    }
+}
+
+@mixin h2{
+    font-size: variables.$font-size-l; 
+    color: variables.$color-primary; 
+    margin-bottom: variables.$margin8; 
+    text-align: left;
+}
+
+@mixin h3{
+    font-size: variables.$font-size-m; 
+    color: variables.$color-primary; 
+    margin-bottom: variables.$margin8; 
+    text-align: left;
+}
+
+@mixin nav-link-styles(
+    $base-color: variables.$color-primary,
+    $hover-color: variables.$color-secondary,
+    $active-color: variables.$color-primary,
+    $active-font-weight: 700
+    
+) {
+    color: $base-color; 
+
+    &:hover {
+        color: $hover-color; 
+    }
+
+    &:active {
+        color: $active-color; 
+        font-weight: $active-font-weight; 
+    }
+}

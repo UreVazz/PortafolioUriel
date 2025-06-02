@@ -1,7 +1,8 @@
-@use "variables";
+@use "variables"; // ¡AJUSTE!
+@use "general"; // Si usas selectores de general, mantenlo.
 
 body {
-  background-color: $color-gris-claro;
+  background-color: variables.$color-tertiary; // ¡AJUSTE!
   display: grid;
   width: 100%;
   grid-template-areas:
@@ -16,9 +17,10 @@ body {
 header {
 grid-area: header;
 height: 100%;
-background-color: $color-tertiary;
+background-color: variables.$color-tertiary;
 display: flex;
 flex-direction: row;
+justify-content: center;
 position: sticky;
 top: 0px;
 z-index: 10;
@@ -33,32 +35,35 @@ main {
 footer {
   grid-area: footer;
   width: 100%;
-  background-color: $color-primary;
-  color:#fff;
-  padding: $padding16;
+  background-color: variables.$color-primary; // ¡AJUSTE!
+  color:variables.$color-blanco; // ¡AJUSTE!
+  padding: variables.$padding16; // ¡AJUSTE!
   display: flex;
   justify-content: center;
 
   .containerfooter {
-    max-width: $max-desktop;
+    max-width: variables.$max-desktop; // ¡AJUSTE!
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
+    align-items: flex-start;
+    padding: variables.$padding32; // ¡AJUSTE!
+
   @media (max-width: 480px) {
     flex-direction: column;
-    padding: $padding24;
-    gap: $gap16;
+    padding: variables.$padding24; // ¡AJUSTE!
+    gap: variables.$padding32; // ¡AJUSTE!
+    align-items: center;
   }
   a {
-    color: #fff;
+    color: variables.$color-blanco; // ¡AJUSTE!
     text-decoration: none;
     font-weight: 500;
+    padding-right: 32px;
   }
   p {
-    color: #fff;
-    font-size: $font-size-base;
+    color: variables.$color-blanco; // ¡AJUSTE!
+    font-size: variables.$font-size-base; // ¡AJUSTE!
   }
 
   @media (max-width: 480px) {
@@ -66,6 +71,7 @@ footer {
         padding: 24px 16px;
         max-width: none;
         width: 100%;
-        gap: $gap16;
+        gap: variables.$gap16; // ¡AJUSTE!
     }
+}
 }
