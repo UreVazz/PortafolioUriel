@@ -64,23 +64,7 @@
   @extend .btn-outline-primary;
 }
 
-// a{
-//   color:${variables.$color-primary};
-//   text-decoration: none;
-//   &:hover {
-//     color: ${variables.$color-blanco};
-//   }
-//   &:focus {
-//     color: ${variables.$color-secondary};
-//     outline: none;
-//   }
-//   &:active {
-//     color: ${variables.$color-primary};
-//   }
-//   &:visited {
-//     color: ${variables.$color-primary};
-//   }
-// }
+
 
 
 @media (max-width: 480px) {
